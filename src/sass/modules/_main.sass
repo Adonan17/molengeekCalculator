@@ -1,4 +1,104 @@
 /* MAIN */
+.calculator
+    display: flex
+    flex-direction: column
+    width: 450px
+    height: 500px
+    background-color: #CDC1FF
+    border-radius: 10px
+    justify-content: space-around
+    align-items: center
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
+    .screen
+        width: 80%
+        height: 100px
+        background-color: #CDC1FF
+        border-radius: 10px 10px 0 0
+        font-family: 'calculator'
+        #upperScreen, #underScreen
+            display: flex
+            justify-content: right
+            align-items: center
+            font-weight: bold
+            color: #7371FC
+            height: 50px
+        #upperScreen
+            font-size: 20px
+        #underScreen
+            font-size: 35px
+    .clearAndDelete
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 90%
+        #clear, #delete
+            width: 190px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #A594F9
+            border-radius: 4px
+            border: 0
+            box-shadow: rgba(115, 113, 252,.5) 0 -1px 3px 0 inset,rgba(115, 113, 252,.1) 0 3px 6px 0
+            box-sizing: border-box
+            color: #fff
+            cursor: pointer
+            display: inherit
+            font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            margin: 0
+            min-height: 56px
+            min-width: 120px
+            padding: 16px 20px
+            position: relative
+            text-align: center
+            user-select: none
+            -webkit-user-select: none
+            touch-action: manipulation
+            vertical-align: baseline
+            transition: all .2s cubic-bezier(.22, .61, .36, 1)
+        #clear:hover, #delete:hover 
+            background-color: #7371FC
+            transform: translateY(-2px)
+    .keys
+        width: 405px
+        display: grid
+        grid-template-columns: repeat(4, 3fr)
+        grid-gap: 10px
+        grid-auto-rows: minmax(40px, auto)
+        .key
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #A594F9
+            border-radius: 4px
+            border: 0
+            box-shadow: rgba(115, 113, 252,.5) 0 -1px 3px 0 inset,rgba(115, 113, 252,.1) 0 3px 6px 0
+            box-sizing: border-box
+            color: #fff
+            cursor: pointer
+            display: inherit
+            font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            margin: 0
+            min-height: 56px
+            min-width: 60px
+            padding: 16px 20px
+            position: relative
+            text-align: center
+            user-select: none
+            -webkit-user-select: none
+            touch-action: manipulation
+            vertical-align: baseline
+            transition: all .2s cubic-bezier(.22, .61, .36, 1)
+        .key:hover
+            background-color: #7371FC
+            transform: translateY(-2px)
+
 
 
 /* RESPONSIVE */
